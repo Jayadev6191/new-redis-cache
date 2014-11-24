@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/register.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		
+		<div class="container">
+		<div class="page-wrapper">
+		  <h1 id="header">Redis Cache</h1>	
+		  	
+		  <div class="col-md-6" id="left">
+		  	<form id="reg" action="POST" role="form">
+		  		<h3>Registration</h3>
+				<div class="col-md-6">
+					<input type="text" class="form-control" id="name" placeholder="Name"/><br>
+					<input type="text" class="form-control" id="age" placeholder="Age"/><br>
+					<input type="submit" value="register" class="btn btn-info"/>
+				</div>
+			</form>
+		  </div>
+		  
+		  <div class="col-md-6" id="right">
+		  	<form id="list" action="POST" role="form">
+		  		<h3>Check User</h3>
+				<div class="col-md-6">
+					<input type="text" class="form-control" id="check_name" placeholder="Name"/>
+					<br>
+					<input type="submit" value="Check User" class="btn btn-success"/>
+					<div id="result">
+						<span></span>
+					</div>
+				</div>
+			</form>
+		  </div>
+		  
+		  <aside>
+		  	<b>Instructions:</b><br>
+		  	
+		  	Regsiter the user and perform a check with username.
+		  	
+		  	If the user is registered successfully the record is stored in redis cache and requests for same user name will be handled from the cache
+		  </aside>
+		</div>
+		</div>
+	</body>
+</html>

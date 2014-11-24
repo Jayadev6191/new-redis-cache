@@ -1,0 +1,59 @@
+.container{
+	padding:40px;
+}
+
+
+#header{
+	text-align:center;
+	color:#939598;
+	font-family:Impact;
+}
+
+h3{
+	margin-left:10px;
+	margin-bottom:10px;	
+	color:#939598;
+	font-family:Impact;
+}
+
+#msg{
+	width:300px;
+	height:80px;
+}
+
+#left,#right{
+	margin-top:30px;
+	margin-left: 40px;
+}
+
+form{
+	width:900px;
+	padding: 0px;
+}
+
+form input.form-control{
+	width:300px;
+}
+
+body{
+	background-color:#202020;
+}
+
+#result{
+	display: block;
+}
+
+#result span{
+	color:#939598;
+	margin-left:10px;
+	font-family:Helvetica;
+}
+
+
+aside{
+	color:#939598;
+	font-size:25px;
+	margin-top:60px;
+	font-family:Impact;
+}
+
